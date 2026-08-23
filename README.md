@@ -1,5 +1,6 @@
 # Nerf Controller 🎮
 What if a Nerf blaster could double as a game controller?
+linkedin link of the video:https://www.linkedin.com/posts/devi-hasini-desharaju-002739402_kinda-chic-to-be-building-our-first-hardware-activity-7497201221166931968-Yx6z?utm_source=share&utm_medium=member_ios&rcm=ACoAAGb648IBPxfaFsIzI97NsbOv05MiEkGNYSQ
 This project started as an experiment to turn a physical Nerf blaster into an interactive controller using an ESP32 and a few sensors. The idea was to make the blaster respond to movement and physical inputs instead of just sitting there looking cool.
 ## What it does
 The ESP32 collects different inputs from the controller and gives immediate feedback:
