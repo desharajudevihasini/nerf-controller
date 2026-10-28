@@ -35,3 +35,41 @@ The main Arduino sketch is:
 `nerf_controller.ino`
 ## Why we built it
 I wanted to experiment with the idea of taking something physical and turning it into a different kind of interface. It was also a fun way to learn how sensors, microcontrollers, and software can work together.
+
+## 🔌 ESP32 Pin Configuration
+
+The controller uses an ESP32 DevKit with the following GPIO connections.
+
+| Component | ESP32 GPIO |
+|-----------|------------|
+| Red LED | GPIO 33 |
+| Blue LED | GPIO 25 |
+| Yellow LED | GPIO 27 |
+| Buzzer | GPIO 26 |
+| Forward Button | GPIO 18 |
+| Backward Button | GPIO 19 |
+| Piezo Sensor | GPIO 34 |
+| MPU6050 SDA | GPIO 21 |
+| MPU6050 SCL | GPIO 22 |
+
+The MPU6050 communicates using I2C at address `0x68`.
+
+Both push buttons use the ESP32's internal pull-up resistors and are active LOW.
+
+## 🚀 Getting Started
+
+1. Install Arduino IDE.
+2. Install ESP32 board support through Boards Manager.
+3. Connect the ESP32 to your computer using a USB data cable.
+4. Open `nerf_controller.ino` in Arduino IDE.
+5. Select your ESP32 board and its serial port.
+6. Upload the sketch to the ESP32.
+7. Open Serial Monitor at 115200 baud.
+8. Move the controller, press the buttons, and test the piezo sensor to observe the readings and feedback.
+
+## 📟 Serial Monitor
+
+The controller prints accelerometer readings, piezo sensor values, and button status to the Serial Monitor.
+
+This helps verify that the connected sensors and controls are responding correctly.
+
